@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import "tailwindcss";
+
+
+* {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+  background: #010a01;
+  color: #00ff41;
+}
+.dashboard-panel {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.dashboard-panel:hover {
+  border-color: #00ff4166 !important;
+  box-shadow: 0 0 20px #00ff4122, 0 0 40px #00ff410a;
+}
+
+.stat-card {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: #00ff4155 !important;
+  box-shadow: 0 0 12px #00ff4122, 0 0 24px #00ff410a;
+  transform: translateY(-2px);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #00ff4122;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #00ff41;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 6px #00ff41;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #010a01;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff4133;
+  border-radius: 2px;
+}
